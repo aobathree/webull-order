@@ -1,0 +1,10 @@
+# Webull証券 OpenAPI 認証情報のサンプル
+# このファイルを config.ini という名前でコピーし、実際の値を記入してください。
+# config.ini は絶対に Git 等にコミットしないでください。
+
+[webull]
+app_key = YOUR_APP_KEY_HERE
+app_secret = YOUR_APP_SECRET_HERE
+
+# region は日本の場合 jp のまま変更不要
+region = jp

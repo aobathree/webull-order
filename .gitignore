@@ -1,0 +1,7 @@
+# 認証情報(絶対にコミットしない)
+config.ini
+
+# Python
+__pycache__/
+*.pyc
+.venv/
