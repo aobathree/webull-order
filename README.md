@@ -58,9 +58,26 @@ region = jp
 
 ## 実行
 
+### 株価取得
+
 ```powershell
 uv run get_quotes.py
 ```
+
+### 発注(成行・買い)
+
+```powershell
+uv run place_order.py
+```
+
+起動すると口座残高を表示した後、銘柄コード(4桁)と株数を対話的に入力し、
+注文内容の確認(y/n)を経て**成行の買い注文**を発注します。
+
+- 執行条件は当日限り(DAY)
+- 口座区分は `config.ini` の `account_tax_type` で指定(GENERAL=一般 / SPECIFIC=特定)
+- 単元株(100株)以外の株数には警告を表示
+
+**注意: 「y」を入力すると実際に発注されます。** 内容を十分確認してください。
 
 出力例:
 
